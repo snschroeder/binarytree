@@ -7,6 +7,8 @@ biTree.prototype.addValue = function(val) {
 
   if (this.root == null) {
     this.root = node;
+    this.root.x = width/2;
+    this.root.y = 20;
   } else {
     this.root.addNode(node);
   }
